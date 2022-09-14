@@ -6,6 +6,8 @@
   "url": "https://github.com/FranzWarm/primalbox",
   "flags": {},
   "version": "1.0.0",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
   "scripts": [],
   "esmodules": [],
   "styles": [
