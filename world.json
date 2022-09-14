@@ -35,7 +35,7 @@
   "system": "sandbox",
   "dependencies": [],
   "socket": false,
-  "manifest": "https://github.com/FranzWarm/primalboxmaster/world.json",
+  "manifest": "https://github.com/FranzWarm/primalbox/main/world.json",
   "download": "https://github.com/FranzWarm/primalbox/zip/master",
   "protected": false,
   "background": "module/imgs/Font-de-Gaume_BG.webp",
