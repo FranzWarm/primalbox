@@ -7,7 +7,7 @@ This module adds Character Sheets that are compatible with Prime Quest to the Sa
 
 Manifest URL: https://github.com/FranzWarm/primalbox/releases/download/1.0.0/world.json
 
-After you have installed the <a href="https://foundryvtt.com/packages/sandbox/">Sandbox System</a>, use the manifest link above to download the world containing the PrimalBox sheets to your Foundry installation. You can read more on this process <a href="https://foundryvtt.com/article/modules/">here</a>.
+After you have installed the <a href="https://foundryvtt.com/packages/sandbox/">Sandbox System</a>, paste the manifest link above into the Install World window to download the files containing the PrimalBox sheets to your Foundry installation. You can read more on this process <a href="https://foundryvtt.com/article/modules/">here</a>.
 
 
 # Licensing
