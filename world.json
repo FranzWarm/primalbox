@@ -36,7 +36,7 @@
   "dependencies": [],
   "socket": false,
   "manifest": "https://github.com/FranzWarm/primalbox/main/world.json",
-  "download": "https://github.com/FranzWarm/primalbox/zip/master",
+  "download": "https://github.com/FranzWarm/primalbox/main/primalbox.zip",
   "protected": false,
   "background": "module/imgs/Font-de-Gaume_BG.webp",
   "coreVersion": "9.269",
