@@ -40,7 +40,7 @@
   "manifest": "https://github.com/FranzWarm/primalbox/releases/download/1.0.0/world.json",
   "download": "https://github.com/FranzWarm/primalbox/releases/download/1.0.0/primalbox.zip",
   "protected": false,
-  "background": "worlds/primebox/module/imgs/Font-de-Gaume_BG.webp",
+  "background": "worlds/primalbox/module/imgs/Font-de-Gaume_BG.webp",
   "coreVersion": "9.269",
   "nextSession": null,
   "resetKeys": false,
