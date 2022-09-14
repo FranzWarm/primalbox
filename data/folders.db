@@ -1,0 +1,11 @@
+{"name":"_PROPERTIES","type":"Item","parent":"popXVgo7LWg3qa48","sorting":"a","sort":0,"color":null,"flags":{},"_id":"4GcXjrbSxGaUSzz9"}
+{"name":"__PROPERTIES","type":"Item","parent":"QzNDg57VAyL21YmY","sorting":"a","sort":0,"color":null,"flags":{},"_id":"8dBsRny3QLfw3pjd"}
+{"_id":"AvnucVHolLyHtPT2","name":"__ARMOR","type":"Item","parent":"bNpTvzUYlBL4OIMx","sorting":"a","sort":100000,"color":null,"flags":{}}
+{"name":"_TEMPLATES","type":"Actor","parent":null,"sorting":"a","sort":0,"color":null,"flags":{},"_id":"ORm15meRJBUMIinY"}
+{"_id":"QzNDg57VAyL21YmY","name":"_GROUPS","type":"Item","parent":"popXVgo7LWg3qa48","sorting":"a","sort":100000,"color":null,"flags":{}}
+{"name":"_PANELS","type":"Item","parent":"popXVgo7LWg3qa48","sorting":"a","sort":0,"color":null,"flags":{},"_id":"ZLwdkolsHRwoqMx2"}
+{"_id":"bNpTvzUYlBL4OIMx","name":"_CITEMS","type":"Item","parent":null,"sorting":"a","sort":0,"color":"","flags":{}}
+{"_id":"popXVgo7LWg3qa48","name":"_TEMPLATE","type":"Item","parent":null,"sorting":"a","sort":100000,"color":"","flags":{}}
+{"_id":"uNJo2v0MCJU2iGOt","name":"_DEFAULTS","type":"Item","parent":"bNpTvzUYlBL4OIMx","sorting":"a","sort":300000,"color":null,"flags":{}}
+{"name":"_TABS","type":"Item","parent":"popXVgo7LWg3qa48","sorting":"a","sort":0,"color":null,"flags":{},"_id":"x1AoEFHxYDKA9KRH"}
+{"_id":"yAdedyTQ05sgk5m4","name":"__WEAPONS","type":"Item","parent":"bNpTvzUYlBL4OIMx","sorting":"a","sort":400000,"color":null,"flags":{}}

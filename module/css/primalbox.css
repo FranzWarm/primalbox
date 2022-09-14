@@ -1,0 +1,1405 @@
+/* Custom CSS */
+
+@font-face {
+    font-family: "Takota";
+    src: url("../fonts/Takota-BRa8.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gihun";
+    src: url("../fonts/Gihun-DORdR.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+	--primalfont: "Takota";
+	--textfont: "Gihun";
+	
+	--sheetred: rgb(195, 8, 0);
+}
+
+.sandbox.sheet.actor {
+    width: 985px !important;
+    /* height: 721px !important; */
+}
+
+.sandbox.sheet .arrup:hover {
+    filter: drop-shadow(0 0 3px red);
+}
+
+.sandbox.sheet .arrdown:hover {
+    filter: drop-shadow(0 0 3px red);
+}
+
+/* CHAT CARD */
+
+.dc-input {
+    background: url("../imgs/chat_card_hidden.webp") no-repeat !important;
+    background-size: auto;
+}
+
+.dc-input input {
+    color: var(--sheetred);
+    font-family: var(--primalfont);
+    font-size: 60px;
+}
+
+.dc-header {
+    font-family: var(--textfont);
+    color: tan;
+    font-size: 22px;
+    border-bottom: 2px solid chocolate;
+}
+
+.roll-menu,
+.chat-message.message, 
+.chat-message.message.emote {
+	background: url("../imgs/chat_card.webp") no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.chat-message.whisper,
+.chat-message.emote.whisper {
+	background: url("../imgs/chat_card_hidden.webp") no-repeat;
+	background-size: cover;
+	color: white;
+}
+.roll-menu .roll-sender-image,
+.chat-message .roll-sender-image {
+	box-sizing: border-box;
+	max-width: 45px;
+	max-height: 45px;
+	width: 45px;
+	height: 45px;
+	border-radius: 40px;
+	border: 2px solid red;
+	object-fit: cover;
+}
+
+.roll-menu .roll-sender-name,
+.chat-message .sbchat-sender-name,
+.chat-message .roll-sender-name {
+	font-family: var(--primalfont);
+	font-weight: 100 !important;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-left: 3px;
+    margin-top: -4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 25px;
+}
+
+.roll-menu .roll-underline,
+.chat-message .roll-underline {
+    height: 27px;
+}
+
+.roll-menu .roll-delete-button,
+.chat-message .roll-delete-button {
+	margin-top: 2px;
+}
+
+.roll-menu .roll-flexrow,
+.chat-message .roll-flexrow {
+	flex: 0 0 82%;
+}
+
+.roll-menu .roll-flavor,
+.chat-message .roll-flavor {
+	font-family: var(--textfont);
+}
+	
+.roll-menu .roll-result,
+.chat-message .roll-result {
+	font-family: var(--primalfont);
+	font-size: 60px;
+	color: yellow;
+}
+
+.roll-menu .sbchat-message,
+.roll-menu .roll-conditional,
+.roll-menu .roll-area,
+.chat-message .sbchat-message,
+.chat-message .roll-conditional,
+.chat-message .roll-area {
+	font-family: var(--textfont);
+	font-weight: 100;
+	font-size: 12px;
+	color: white;
+	letter-spacing: 1.3px;
+	margin-top: -4px;
+}
+
+.roll-menu .roll-detail, 
+.roll-menu .roll-area,
+.chat-message .roll-detail, 
+.chat-message .roll-area {
+	margin-top: 7px;
+	margin-bottom: 6px;
+	max-height: 76px !important;
+	height: 76px !important;
+}
+
+.chat-message .modifier-row {
+	visibility: hidden;	
+}
+
+.chat-message .roll-wbutton {
+	color: yellow;
+}
+
+
+/* HEADER */
+
+.roll-free, .label-mod, .input-mod,
+.sandbox.sheet .roll-mode,
+.sandbox.sheet.actor .atabs {
+	display: none;
+}
+
+.sandbox.sheet.actor .rightblock {
+	position: absolute;
+	top: -1px;
+    left: 345px;
+	color: #6a5353;
+}
+
+/* .sandbox.sheet .check-istemplate,  */
+/* .sandbox.sheet .rightblock-element { */
+	/* visibility: hidden;	 */
+/* } */
+
+.sandbox.sheet .selectsheet {
+	color: #6a5353;
+}
+
+.sandbox.sheet.actor .profile-img {
+    position: absolute;
+    top: 458px;
+    left: 30px;
+    border-radius: 60px;
+    border: 3px solid white;
+	max-width: 100px !important;
+    max-height: 100px !important;
+	min-width: 100px;
+    min-height: 100px;
+    object-fit: cover;
+}
+
+.sandbox.sheet.actor .charname input {
+	position: absolute;
+	width: 177px;
+    height: 37px;
+    top: 56px;
+    left: 130px;
+    margin: 0px;
+	border: 0px;
+	font-family:var(--primalfont);
+}
+
+
+
+/* ATTRIBUTES */
+
+.sandbox.sheet .num-body-inputgroup {
+	position: absolute;
+    top: 141px;
+    left: 32px;
+    height: 118px !important;
+    width: 119px !important;
+    border-radius: 1000px !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 70px;
+}
+
+.sandbox.sheet a[attkey="NUM_BODY"].arrcontainer {
+	position: absolute;
+	top: 187px;
+    left: 133px;
+}
+
+.sandbox.sheet .LBL_BODY_ROLL_label:before  {
+	font-family: 'Font Awesome 5 Free';
+	content:'\f522';
+    font-weight: 900;
+}
+
+.sandbox.sheet .LBL_BODY_ROLL_label {
+	position: absolute;
+    top: 231px;
+    left: 72px;
+    font-size: 15px;
+    color: darkred;
+}
+
+.sandbox.sheet .LBL_BODY_ROLL_label:hover {
+    color: red;
+}
+
+.sandbox.sheet .num-mind-inputgroup {
+	position: absolute;
+    top: 123px;
+    left: 201px;
+    height: 118px !important;
+    width: 119px !important;
+    border-radius: 1000px !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 70px;
+}
+
+.sandbox.sheet a[attkey="NUM_MIND"].arrcontainer {
+	position: absolute;
+	top: 169px;
+    left: 301px;
+}
+
+.sandbox.sheet .LBL_MIND_ROLL_label:before  {
+	font-family: 'Font Awesome 5 Free';
+	content:'\f522';
+    font-weight: 900;
+}
+
+.sandbox.sheet .LBL_MIND_ROLL_label {
+	position: absolute;
+    top: 212px;
+    left: 242px;
+    font-size: 15px;
+    color: darkred;
+}
+
+.sandbox.sheet .LBL_MIND_ROLL_label:hover {
+    color: red;
+}
+
+.sandbox.sheet .num-heart-inputgroup {
+	position: absolute;
+    top: 68px;
+    left: 349px;
+    height: 118px !important;
+    width: 119px !important;
+    border-radius: 1000px !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 70px;
+}
+
+.sandbox.sheet a[attkey="NUM_HEART"].arrcontainer {
+	position: absolute;
+	top: 113px;
+    left: 451px;
+}
+
+.sandbox.sheet .LBL_HEART_ROLL_label:before  {
+	font-family: 'Font Awesome 5 Free';
+	content:'\f522';
+    font-weight: 900;
+}
+
+.sandbox.sheet .LBL_HEART_ROLL_label {
+	position: absolute;
+    top: 157px;
+    left: 389px;
+    font-size: 15px;
+    color: darkred;
+}
+
+.sandbox.sheet .LBL_HEART_ROLL_label:hover {
+    color: red;
+}
+
+.sandbox.sheet .num-vitality-inputgroup {
+	position: absolute;
+    top: 61px;
+    left: 767px;
+    height: 50px !important;
+    width: 50px !important;
+    max-width: none !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 37px;
+    border-radius: 25px !important;
+}
+
+/* VITALITY MAX VALUE */
+.sandbox.sheet .flexblock-left input[type=text].input-bhalf {
+	position: absolute;
+    top: 61px;
+    left: 818px;
+    height: 50px !important;
+    width: 50px !important;
+    max-width: none !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 37px;
+    border-radius: 25px !important;
+    color: var(--sheetred);
+}
+
+.sandbox.sheet a[attkey="NUM_VITALITY"].arrcontainer {
+	position: absolute;
+    top: 103px;
+    left: 809px;
+    transform: rotate(90deg);
+}
+
+.sandbox.sheet .NUM_DEFENSE {
+	position: absolute;
+    top: 73px;
+    left: 889px;
+    height: 50px !important;
+    width: 50px !important;
+    max-width: none !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 51px;
+}
+
+.sandbox.sheet a[attkey="NUM_DEFENSE"].arrcontainer {
+	position: absolute;
+    top: 120px;
+    left: 906px;
+    transform: rotate(90deg);
+}
+
+.sandbox.sheet .lbl-def-roll-fontgroup:before  {
+	font-family: 'Font Awesome 5 Free';
+	content:'\f522';
+    font-weight: 900;
+}
+
+.sandbox.sheet .lbl-def-roll-fontgroup {
+	position: absolute;
+    top: 143px;
+    left: 899px;
+    font-size: 15px;
+    color: darkred;
+}
+
+.sandbox.sheet .lbl-def-roll-fontgroup:hover {
+    color: red;
+}
+
+.sandbox.sheet .num-posi-dice-inputgroup {
+	position: absolute;
+    top: 498px;
+    left: 135px;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 20px !important;
+    background: white;
+    border: 2px solid darkred !important;
+	font-family: var(--primalfont);
+    font-size: 35px;
+}
+
+.sandbox.sheet .num-posi-dice-fontgroup {
+position: absolute;
+    top: 537px;
+    left: 135px;
+    font-family: var(--primalfont);
+    font-size: 20px;
+    color: white;
+    background-color: var(--sheetred);
+    padding: 2px 5px 0px 15px;
+}
+
+.sandbox.sheet a[attkey="NUM_POSI_DICE"].arrcontainer {
+	position: absolute;
+	top: 536px;
+    left: 134px;
+}
+
+.sandbox.sheet a[attkey="NUM_POSI_DICE"] .arrup {
+	background-image: none;
+	position: relative;
+	top: 2px;
+	left: 0px;
+	font-family: 'Font Awesome 5 Free';
+	font-style:normal;
+	font-size:15px;
+    font-weight: 900;
+	color: white;
+}
+
+.sandbox.sheet a[attkey="NUM_POSI_DICE"] .arrup:hover {
+ 	color: black;
+	top: -3px;
+	left: -2px;
+	font-size:22px;
+}
+
+.sandbox.sheet a[attkey="NUM_POSI_DICE"] .arrup:after {
+	content:'\f0d8';
+}
+
+.sandbox.sheet a[attkey="NUM_POSI_DICE"] .arrdown {
+	background-image: none;
+	position: relative;
+	top: -3px;
+	left: 0px;
+	font-family: 'Font Awesome 5 Free';
+	font-style:normal;
+	font-size:15px;
+    font-weight: 900;
+	color: white;
+}
+
+.sandbox.sheet a[attkey="NUM_POSI_DICE"] .arrdown:hover {
+ 	color: black;
+	top: -7px;
+	left: -2px;
+	font-size:22px;
+}
+
+.sandbox.sheet a[attkey="NUM_POSI_DICE"] .arrdown:after {
+	content:'\f0d7';
+}
+
+.sandbox.sheet .num-nega-dice-inputgroup {
+	position: absolute;
+    top: 498px;
+    left: 180px;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 20px !important;
+    background: white;
+    border: 2px solid darkred !important;
+	font-family: var(--primalfont);
+    font-size: 35px;
+}
+
+.sandbox.sheet .num-nega-dice-fontgroup {
+	position: absolute;
+    top: 537px;
+    left: 179px;
+    font-family: var(--primalfont);
+    font-size: 20px;
+    color: white;
+    background-color: var(--sheetred);
+    padding: 2px 9px 0px 16px;
+}
+
+.sandbox.sheet a[attkey="NUM_NEGA_DICE"].arrcontainer {
+	position: absolute;
+	top: 536px;
+    left: 179px;
+}
+
+.sandbox.sheet a[attkey="NUM_NEGA_DICE"] .arrup {
+	background-image: none;
+	position: relative;
+	top: 2px;
+	left: 0px;
+	font-family: 'Font Awesome 5 Free';
+	font-style:normal;
+	font-size:15px;
+    font-weight: 900;
+	color: white;
+}
+
+.sandbox.sheet a[attkey="NUM_NEGA_DICE"] .arrup:hover {
+ 	color: black;
+	top: -3px;
+	left: -2px;
+	font-size:22px;
+}
+
+.sandbox.sheet a[attkey="NUM_NEGA_DICE"] .arrup:after {
+
+	content:'\f0d8';
+}
+
+.sandbox.sheet a[attkey="NUM_NEGA_DICE"] .arrdown {
+	background-image: none;
+	position: relative;
+	top: -3px;
+	left: 0px;
+	font-family: 'Font Awesome 5 Free';
+	font-style:normal;
+	font-size:15px;
+    font-weight: 900;
+	color: white;
+}
+
+.sandbox.sheet a[attkey="NUM_NEGA_DICE"] .arrdown:hover {
+ 	color: black;
+	top: -7px;
+	left: -2px;
+	font-size:22px;
+}
+
+.sandbox.sheet a[attkey="NUM_NEGA_DICE"] .arrdown:after {
+	content:'\f0d7';
+}
+
+.sandbox.sheet .CHK_CHAR_INFO  {
+	position: absolute;
+    top: 532px;
+    left: 26px;
+    width: 29px !important;
+    height: 28px;
+    background-size: 30px 28px;
+}
+
+.sandbox.sheet .PANEL_INFO {
+	position: absolute;
+    top: 281px;
+    left: 20px;
+    width: 300px;
+    height: 150px;
+}
+
+.sandbox.sheet .TXA_CHAR_BIO {
+	background-color: rgba(255, 255, 255, 0.93);	
+	border: 3.5px solid var(--sheetred);
+	height: 150px;
+	max-height: 150px;
+	font-family: "Gihun";
+	font-size: 15px;
+}
+
+.sandbox.sheet .LBL_LUCK_ROLL_label i.fa-dice-d20:before {
+    color: rgba(0, 0, 0, 0);
+}
+
+.sandbox.sheet .LBL_LUCK_ROLL_label  {
+	position: absolute;
+    top: 454px;
+    left: 25px;
+    transform: rotate(45deg);
+    background: url(../imgs/clover-solid.svg) no-repeat;
+    background-size: 35px 35px !important;
+    height: 35px;
+    width: 35px;
+}
+
+.sandbox.sheet .LBL_LUCK_ROLL_label:hover {
+    background: url("../imgs/clover-solid-hover.svg") no-repeat;
+}
+
+.sandbox.sheet .NUM_XP {
+	position: absolute;
+    top: 68px;
+    left: 689px;
+    height: 50px !important;
+    width: 50px !important;
+    max-width: none !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 25px;
+}
+
+.sandbox.sheet a[attkey="NUM_XP"].arrcontainer {
+	position: absolute;
+    top: 100px;
+    left: 705px;
+    transform: rotate(90deg);
+}
+
+.sandbox.sheet .NUM_XP_SPENT {
+	position: absolute;
+    top: 117px;
+    left: 689px;
+    height: 50px !important;
+    width: 50px !important;
+    max-width: none !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 25px;
+}
+
+.sandbox.sheet a[attkey="NUM_XP_SPENT"].arrcontainer {
+	position: absolute;
+    top: 147px;
+    left: 705px;
+    transform: rotate(90deg);
+}
+
+/* TAGS */
+/* ---------- CONCEPT */
+.sandbox.sheet .TBL_CONCEPT {
+	height: 0% !important;
+    position: absolute;
+    top: 176px;
+    left: 429px;
+    transform: rotate(-30.5deg);
+    width: 194px !important;
+
+}
+
+.sandbox.sheet .TBL_CONCEPT input.table-input,
+.sandbox.sheet .TBL_CONCEPT tr,
+.sandbox.sheet .TBL_CONCEPT  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_CONCEPT  td.ci-delete {	
+	display: none;
+}
+
+.sandbox.sheet .TBL_CONCEPT  td.input-min {	
+	position: absolute;
+	top: 0px;
+    left: 189px;
+}
+
+.sandbox.sheet .TBL_CONCEPT input.table-input {
+	text-align: left !important;	
+	font-family:var(--primalfont);
+	font-size: 20px;
+	border-radius: 2px;
+}
+
+/* ---------- TALENT */
+.sandbox.sheet .TBL_TALENT {
+	height: 0% !important;
+    position: absolute;
+    top: 258px;
+    left: 442px;
+    transform: rotate(-20deg);
+    width: 219px !important;
+
+}
+
+.sandbox.sheet .TBL_TALENT input.table-input,
+.sandbox.sheet .TBL_TALENT tr,
+.sandbox.sheet .TBL_TALENT  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_TALENT  td.ci-delete {	
+	display: none;
+}
+
+
+.sandbox.sheet .TBL_TALENT  td.input-min {	
+	position: absolute;
+	top: 1px;
+    left: 213px;
+}
+
+.sandbox.sheet .TBL_TALENT input.table-input {
+	text-align: left !important;	
+	font-family:var(--primalfont);
+	font-size: 20px;
+	border-radius: 2px;
+}
+
+/* ---------- MOTIVATION */
+.sandbox.sheet .TBL_MOTIVATION {
+	height: 0% !important;
+    position: absolute;
+    top: 350px;
+    left: 487px;
+    transform: rotate(-6deg);
+    width: 186px !important;
+}
+
+.sandbox.sheet .TBL_MOTIVATION input.table-input,
+.sandbox.sheet .TBL_MOTIVATION tr,
+.sandbox.sheet .TBL_MOTIVATION  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_MOTIVATION  td.ci-delete {	
+	display: none;
+}
+
+
+.sandbox.sheet .TBL_MOTIVATION  td.input-min {	
+	position: absolute;
+	top: 1px;
+    left: 178px;
+}
+
+.sandbox.sheet .TBL_MOTIVATION input.table-input {
+	text-align: left !important;	
+	font-family:var(--primalfont);
+	font-size: 20px;
+	border-radius: 2px;
+}
+
+/* ---------- RELATIONSHIP */
+.sandbox.sheet .TBL_RELATIONSHIP {
+	height: 0% !important;
+    position: absolute;
+    top: 447px;
+    left: 487px;
+    transform: rotate(8.5deg);
+    width: 176px !important;
+}
+
+.sandbox.sheet .TBL_RELATIONSHIP input.table-input,
+.sandbox.sheet .TBL_RELATIONSHIP tr,
+.sandbox.sheet .TBL_RELATIONSHIP  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_RELATIONSHIP  td.ci-delete {	
+	display: none;
+}
+
+
+.sandbox.sheet .TBL_RELATIONSHIP  td.input-min {	
+	position: absolute;
+	top: -1px;
+    left: 171px;
+}
+
+.sandbox.sheet .TBL_RELATIONSHIP input.table-input {
+	text-align: left !important;	
+	font-family:var(--primalfont);
+	font-size: 20px;
+	border-radius: 2px;
+}
+
+/* ---------- TROUBLE */
+.sandbox.sheet .TBL_TROUBLE {
+	height: 0% !important;
+    position: absolute;
+    top: 519px;
+    left: 452px;
+    transform: rotate(16deg);
+    width: 200px !important;
+}
+
+.sandbox.sheet .TBL_TROUBLE input.table-input,
+.sandbox.sheet .TBL_TROUBLE tr,
+.sandbox.sheet .TBL_TROUBLE  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_TROUBLE  td.ci-delete {	
+	display: none;
+}
+
+.sandbox.sheet .TBL_TROUBLE  td.input-min {	
+	position: absolute;
+	top: 1px;
+    left: 195px;
+}
+
+.sandbox.sheet .TBL_TROUBLE input.table-input {
+	text-align: left !important;	
+	font-family:var(--primalfont);
+	font-size: 20px;
+	border-radius: 2px;
+}
+
+/* ---------- EXTRA TAGS */
+.sandbox.sheet .TBL_EXTRA_TAGS {
+	position: absolute;
+    top: 568px;
+    left: 334px;
+	height: 0px !important;
+    width: 234px !important;
+}
+
+.sandbox.sheet .TBL_EXTRA_TAGS input.table-input,
+.sandbox.sheet .TBL_EXTRA_TAGS tr,
+.sandbox.sheet .TBL_EXTRA_TAGS  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_EXTRA_TAGS  td.input-min {	
+	position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px !important;
+    width: 0px;
+    min-width: 0px;
+}
+
+.sandbox.sheet .TBL_EXTRA_TAGS input.table-input {
+	position: relative;
+	left: -8px;
+	width: 92%;
+	padding: 0px;	
+	text-align: left !important;	
+	font-family:var(--primalfont);
+	font-size: 18px;
+}
+
+.sandbox.sheet .TBL_EXTRA_TAGS select.table-free {
+	position: relative;
+    left: -11px;
+    width: 129%;
+}
+
+/* EQUIPMENT */
+/* ---------- WEAPONS TAB */
+.sandbox.sheet .TBL_WEAPONS {
+	position: absolute;
+    top: 585px;
+    left: 32px;
+    height: 10px !important;
+    width: 300px !important;
+}
+
+.sandbox.sheet .NUM_WEAPONS_ENCUMB,
+.sandbox.sheet .NUM_WEAPONS_COST {
+	display: none;
+}
+
+.sandbox.sheet .TBL_WEAPONS input.table-input,
+.sandbox.sheet .TBL_WEAPONS tr,
+.sandbox.sheet .TBL_WEAPONS  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_WEAPONS  td.input-min {	
+	position: relative;
+    top: 0px;
+    left: -2px;
+    padding: 0px !important;
+    width: 0px !important;
+    min-width: 0px !important;
+}
+
+.sandbox.sheet .TBL_WEAPONS input[type="checkbox"] {
+	height: 17px;
+	margin: 2px 3px;
+}
+
+.sandbox.sheet .TXT_WEAPONS_VALUE {
+	position: relative;
+    left: -3px;
+    width: 137px;
+    height: 21px;
+    padding: 0px;
+    padding-left: 3px;
+    border-radius: 2px !important;
+    text-align: left !important;
+    font-family: var(--primalfont);
+    font-size: 18px;
+}
+
+.sandbox.sheet .NUM_WEAPONS_DAMAGE {
+	position: relative;
+    left: -4px;
+    width: 47px !important;
+    height: 21px;
+    padding: 0px !important;
+    padding-left: 3px;
+    border-radius: 2px !important;
+    text-align: center !important;
+    font-family: var(--primalfont);
+    font-size: 18px;
+}
+
+.sandbox.sheet .TXA_WEAPONS_NOTES {
+	position: relative;
+    left: -12px;
+    width: 47px !important;
+    height: 21px;
+    text-align: center !important;
+	color: darkred !important;
+}
+
+.sandbox.sheet .TBL_WEAPONS .fa-file-alt:before {
+		font-family: 'Font Awesome 5 Free';
+	font-style:normal;
+	font-size:15px;
+	font-weight:900;  
+	content: "\f059";
+}
+
+.sandbox.sheet .TBL_WEAPONS .fa-file-alt:hover {
+	color: black;
+}
+
+.sandbox.sheet .TBL_WEAPONS td.ci-delete {
+	position: relative;
+    left: -5px;
+	color: white;
+	background-color: var(--sheetred);
+}
+
+.sandbox.sheet .TBL_WEAPONS .fa-times-circle:before {
+	content: "\f1f8";
+}
+
+.sandbox.sheet .TBL_WEAPONS .fa-times-circle:hover {
+	color: black !important;
+}
+
+/* ---------- ARMOR TAB */
+.sandbox.sheet .TBL_ARMOR {
+	position: absolute;
+    top: 585px;
+    left: 32px;
+    height: 10px !important;
+    width: 300px !important;
+}
+
+.sandbox.sheet .NUM_ARMOR_ENCUMB,
+.sandbox.sheet .NUM_ARMOR_COST {
+	display: none;
+}
+
+.sandbox.sheet .TBL_ARMOR input.table-input,
+.sandbox.sheet .TBL_ARMOR tr,
+.sandbox.sheet .TBL_ARMOR  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_ARMOR  td.input-min {	
+	position: relative;
+    top: 0px;
+    left: -2px;
+    padding: 0px !important;
+    width: 0px !important;
+    min-width: 0px !important;
+}
+
+.sandbox.sheet .TBL_ARMOR input[type="checkbox"] {
+	height: 17px;
+	margin: 2px 3px;
+}
+
+.sandbox.sheet .TXT_ARMOR_VALUE {
+	position: relative;
+    left: -3px;
+    width: 137px;
+    height: 21px;
+    padding: 0px;
+    padding-left: 3px;
+    border-radius: 2px !important;
+    text-align: left !important;
+    font-family: var(--primalfont);
+    font-size: 18px;
+}
+
+.sandbox.sheet .NUM_ARMOR_DEFENSE {
+	position: relative;
+    left: -4px;
+    width: 47px !important;
+    height: 21px;
+    padding: 0px !important;
+    padding-left: 3px;
+    border-radius: 2px !important;
+    text-align: center !important;
+    font-family: var(--primalfont);
+    font-size: 18px;
+}
+
+.sandbox.sheet .TXA_ARMOR_NOTES {
+	position: relative;
+    left: -12px;
+    width: 47px !important;
+    height: 21px;
+    text-align: center !important;
+	color: darkred !important;
+}
+
+.sandbox.sheet .TBL_ARMOR .fa-file-alt:before {
+		font-family: 'Font Awesome 5 Free';
+	font-style:normal;
+	font-size:15px;
+	font-weight:900;  
+	content: "\f059";
+}
+
+.sandbox.sheet .TBL_ARMOR .fa-file-alt:hover {
+	color: black;
+}
+
+.sandbox.sheet .TBL_ARMOR td.ci-delete {
+	position: relative;
+    left: -5px;
+	color: white;
+	background-color: var(--sheetred);
+}
+
+.sandbox.sheet .TBL_ARMOR .fa-times-circle:before {
+	content: "\f1f8";
+}
+
+.sandbox.sheet .TBL_ARMOR .fa-times-circle:hover {
+	color: black !important;
+}
+
+/* ---------- EQUIPMENT TAB */
+.sandbox.sheet .TBL_EQUIPMENT {
+	position: absolute;
+    top: 224px;
+    left: 756px;
+    height: 0px !important;
+    width: 213px !important;
+}
+
+.sandbox.sheet .NUM_EQUIPMENT_COST,
+.sandbox.sheet .NUM_EQUIPMENT_DEFENSE,
+.sandbox.sheet .NUM_EQUIPMENT_ENCUMB{
+	display: none;
+}
+
+.sandbox.sheet .TBL_EQUIPMENT input.table-input,
+.sandbox.sheet .TBL_EQUIPMENT tr,
+.sandbox.sheet .TBL_EQUIPMENT  {
+	background: 0;
+	border: 0px;
+}
+
+.sandbox.sheet .TBL_EQUIPMENT td {
+	height: -0px;
+}
+
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(6) {
+	position: relative;
+	top: -1px;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(7) {
+	position: relative;
+	top: -1px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(8) {
+	position: relative;
+	top: -2px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(9) {
+	position: relative;
+	top: -2px;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(10) {
+	position: relative;
+	top: -3px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(11) {
+	position: relative;
+	top: -3px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(12) {
+	position: relative;
+	top: -3px;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(13) {
+	position: relative;
+	top: -4px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(14) {
+	position: relative;
+	top: -4px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(15) {
+	position: relative;
+	top: -4px;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(16) {
+	position: relative;
+	top: -5px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(17) {
+	position: relative;
+	top: -5px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(18) {
+	position: relative;
+	top: -5px;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(19) {
+	position: relative;
+	top: -6px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(20) {
+	position: relative;
+	top: -7px;;
+}
+.sandbox.sheet .TBL_EQUIPMENT tr:nth-child(21) {
+	display: none;
+}
+
+.sandbox.sheet .TXT_EQUIPMENT_VALUE {
+	position: relative;
+    width: 164px !important;
+    height: 17px;
+    padding: 0px;
+    padding-left: 3px;
+    border-radius: 2px !important;
+    text-align: left !important;
+    font-family: var(--primalfont);
+    font-size: 18px;
+}
+
+.sandbox.sheet .TXA_EQUIPMENT_NOTES {
+	position: relative;
+    left: -7px;
+    top: 0px;
+    width: 0px !important;
+    height: 0px !important;
+    text-align: center !important;
+    color: darkred !important;
+    padding: 0px;
+}
+
+.sandbox.sheet .TBL_EQUIPMENT .fa-file-alt:before {
+	font-family: 'Font Awesome 5 Free';
+	font-style:normal;
+	font-size:15px;
+	font-weight:550;  
+	content: "\f059";
+}
+
+.sandbox.sheet .TBL_EQUIPMENT .fa-file-alt:hover {
+	color: black;
+}
+
+.sandbox.sheet .TBL_EQUIPMENT td.ci-delete {
+	position: relative;
+    left: 3px;
+	color: white;
+	background-color: var(--sheetred);
+	height: 0px;
+}
+
+.sandbox.sheet .TBL_EQUIPMENT .fa-times-circle:before {
+	content: "\f1f8";
+}
+
+.sandbox.sheet .TBL_EQUIPMENT .fa-times-circle:hover {
+	color: black !important;
+}
+
+.sandbox.sheet .TBL_EQUIPMENT .addRow {
+	position: relative;
+	top: 1px;
+    left: -52px;
+}
+
+/* ---------- ENCUMBRANCE BAR */
+.sandbox.sheet.actor .RDO_ENCUMBRANCE {
+	position: absolute;
+	top: 437px;
+    left: 490px;
+    width: 460px;
+	transform: rotate(-90deg);
+}
+
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a .fa-square {
+	pointer-events: none;
+}
+
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a:hover {
+	cursor: default;
+	text-shadow: none;
+}
+
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a .fa-square:before {
+	content: "";
+	display: inline-block;
+	margin-left: 0px;
+	height: 3px;
+	width: 4.48px;
+}
+
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a .far.fa-square:before {
+ background-color: white;	
+}
+
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a .fas.fa-square:before {
+	background: var(--sheetred);
+}
+
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a:nth-child(1) {
+	display: none;
+}
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a:nth-child(2) .fa-square:before  {
+	border-top:2px solid var(--sheetred);
+	border-left:2px solid var(--sheetred);
+	border-bottom:2px solid var(--sheetred);
+}
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a:nth-child(n+3):nth-child(-n+100) .fa-square:before  {
+	border-top:2px solid var(--sheetred);
+	border-bottom:2px solid var(--sheetred);
+}
+.sandbox.sheet.actor .rdo-encumbrance-inputgroup > a:nth-child(101) .fa-square:before  {
+	border-top:2px solid var(--sheetred);
+	border-right:2px solid var(--sheetred);
+	border-bottom:2px solid var(--sheetred);
+}
+
+/* ---------- ENCUMBRANCE ICONS */
+.sandbox.sheet .lbl-encumbered-alert-fontgroup {
+	position: absolute;
+	top: 198px;
+    left: 906px;
+	color: var(--sheetred);
+	font-size: 21px;
+}
+
+.sandbox.sheet .lbl-encumbered-icon-fontgroup {
+	position: absolute;
+	top: 485px;
+    left: 209px;
+	color: black;
+	font-size: 26px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: white;
+}
+
+.sandbox.sheet .TXT_ENCUMBERED_NUMBER {
+	position: absolute;
+	top: 491px;
+    left: 206.5px;
+	width: 30px  !important;
+	border: none !important;
+	background-color: rgba(0,0,0,0) !important;
+		
+	font-family: 'Gihun';
+	font-weight: 900;
+	font-size: 12px;
+	color: white;	
+}
+
+.sandbox.sheet .lbl-encumbered-fontgroup {
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal;
+	font-weight: 900;  
+	padding: 0px;
+	margin: 0px;
+}
+.sandbox.sheet .lbl-encumbered-alert-fontgroup:before {
+	content: '\f071';
+}
+.sandbox.sheet .lbl-encumbered-icon-fontgroup:before {
+	content: '\f5cd';
+}
+
+.sandbox.sheet.actor .txt-encumbered-number-inputgroup {
+	pointer-events: none;
+}
+
+.sandbox.sheet.actor .txt-encumbered-number-inputgroup:hover {
+	cursor: default;
+	text-shadow: none;
+}
+
+/* ---------- EQUIP SELECTOR */
+.sandbox.sheet .LST_WEAPON_OR_ARMOR {
+	position: absolute;
+	top: 564px;
+    left: 32px;
+	height: 22px;
+	width: 163px;
+	padding: 0px;
+	border: none !important;
+	background-color: white;
+	border-radius: 1px;
+	
+	font-family: "Takota";
+	font-size: 20px;
+	color: var(--sheetred);
+}
+
+.sandbox.sheet .LST_WEAPON_OR_ARMOR:focus {
+	box-shadow: none !important;
+}
+
+.sandbox.sheet .lbl-equip-notes-fontgroup {	
+	position: absolute;
+	top: 564px;
+    left: 200px;
+	height: 22px;
+	padding: 0px 5px;
+	
+	font-family: "Takota";
+	font-size: 18px;
+	background-color: white;
+	color: var(--sheetred);
+	
+}
+
+.sandbox.sheet .lbl-armor-def-fontgroup {	
+	position: absolute;
+	top: 564px;
+    left: 255px;
+	height: 22px;
+	width: 53px;
+	padding: 0px;
+	
+	font-family: "Takota";
+	font-size: 18px;
+	text-align: center;
+	background-color: white;
+	color: var(--sheetred);	
+}
+
+.sandbox.sheet .lbl-weapons-dmg-fontgroup {	
+	position: absolute;
+	top: 564px;
+    left: 255px;
+	height: 22px;
+	width: 53px;
+	padding: 0px;
+	
+	font-family: "Takota";
+	font-size: 18px;
+	text-align: center;
+	background-color: white;
+	color: var(--sheetred);	
+}
+
+/* ---------- RESOURCES */
+.sandbox.sheet .NUM_FOOD {
+	position: absolute;
+    top: 612px;
+    left: 587px;
+    height: 50px !important;
+    width: 50px !important;
+    max-width: none !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 51px;
+}
+
+.sandbox.sheet a[attkey="NUM_FOOD"].arrcontainer {
+	position: absolute;
+    top: 662px;
+    left: 604px;
+    transform: rotate(90deg);
+}
+
+.sandbox.sheet .NUM_WATER {
+	position: absolute;
+    top: 619px;
+    left: 656px;
+    height: 50px !important;
+    width: 50px !important;
+    max-width: none !important;
+    border: 0px !important;
+    background: 0;
+    font-family: var(--primalfont);
+    font-size: 51px;
+}
+
+.sandbox.sheet a[attkey="NUM_WATER"].arrcontainer {
+	position: absolute;
+    top: 662px;
+    left: 673px;
+    transform: rotate(90deg);
+}
+

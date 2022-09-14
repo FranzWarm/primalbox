@@ -1,0 +1,47 @@
+{
+  "name": "primalbox",
+  "title": "PrimalBox",
+  "description": "",
+  "authors": "https://github.com/FranzWarm",
+  "url": "https://github.com/FranzWarm/primalbox",
+  "flags": {},
+  "version": "1.0.0",
+  "scripts": [],
+  "esmodules": [],
+  "styles": "module/css/primalbox.css",
+  "languages": [],
+  "packs": [
+    {
+      "label": "Equipment",
+      "type": "Item",
+      "name": "equipment",
+      "path": "packs/equipment.db",
+      "system": "sandbox",
+      "package": "world",
+      "entity": "Item",
+      "private": false
+    },
+    {
+      "label": "Credits and License",
+      "type": "JournalEntry",
+      "name": "credits-and-license",
+      "path": "packs/credits-and-license.db",
+      "system": "sandbox",
+      "package": "world",
+      "entity": "JournalEntry",
+      "private": false
+    }
+  ],
+  "system": "sandbox",
+  "dependencies": [],
+  "socket": false,
+  "manifest": "https://github.com/FranzWarm/primalboxmaster/world.json",
+  "download": "https://github.com/FranzWarm/primalbox/zip/master",
+  "protected": false,
+  "background": "module/imgs/Font-de-Gaume_BG.webp",
+  "coreVersion": "9.269",
+  "nextSession": null,
+  "resetKeys": false,
+  "safeMode": false,
+  "systemVersion": "0.13.4"
+}
