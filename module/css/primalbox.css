@@ -112,6 +112,7 @@
 .roll-menu .roll-flavor,
 .chat-message .roll-flavor {
 	font-family: var(--textfont);
+	letter-spacing: 1px;
 }
 	
 .roll-menu .roll-result,
@@ -1098,11 +1099,11 @@ position: absolute;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(13) {
 	position: relative;
-	top: -4px;;
+	top: -4px;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(14) {
 	position: relative;
-	top: -4px;;
+	top: -4px;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(15) {
 	position: relative;
@@ -1110,11 +1111,11 @@ position: absolute;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(16) {
 	position: relative;
-	top: -5px;;
+	top: -5px;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(17) {
 	position: relative;
-	top: -5px;;
+	top: -5px;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(18) {
 	position: relative;
@@ -1122,11 +1123,11 @@ position: absolute;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(19) {
 	position: relative;
-	top: -6px;;
+	top: -6px;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(20) {
 	position: relative;
-	top: -7px;;
+	top: -7px;
 }
 .sandbox.sheet .TBL_EQUIPMENT tr:nth-child(21) {
 	display: none;

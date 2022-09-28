@@ -55,3 +55,5 @@
 {"key":"sandbox-extensions.OPTION_USE_CITEM_ICON","value":"true","_id":"ziyiWrvDhAvqQGgz"}
 {"_id":"SqAR4o7382aA5d5S","key":"core.compendiumConfiguration","value":"{\"world.equipment\":{\"private\":false,\"locked\":true},\"world.credits-and-license\":{\"private\":false,\"locked\":false}}"}
 {"_id":"SqAR4o7382aA5d5S","key":"core.compendiumConfiguration","value":"{\"world.equipment\":{\"private\":false,\"locked\":true},\"world.credits-and-license\":{\"private\":false,\"locked\":true}}"}
+{"_id":"SqAR4o7382aA5d5S","key":"core.compendiumConfiguration","value":"{\"world.equipment\":{\"private\":false,\"locked\":false},\"world.credits-and-license\":{\"private\":false,\"locked\":true}}"}
+{"_id":"SqAR4o7382aA5d5S","key":"core.compendiumConfiguration","value":"{\"world.equipment\":{\"private\":false,\"locked\":true},\"world.credits-and-license\":{\"private\":false,\"locked\":true}}"}
